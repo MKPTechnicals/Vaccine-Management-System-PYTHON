@@ -36,6 +36,66 @@ To ensure the security of your personal information and database credentials, fo
 
 By following these steps, you can safely manage and operate the vaccination center management system with your own database and PIN code.
 
+## Creating Database Tables
+
+Before using the script, make sure to create the necessary tables in your MySQL database with the following schema:
+
+```sql
+CREATE TABLE DOSE_1_COVAXIN (
+    CITY VARCHAR(50) NOT NULL,
+    CONTACT_NUMBER BIGINT NOT NULL,
+    DATE DATETIME NOT NULL,
+    NAME VARCHAR(50) NOT NULL,
+    AADHAAR BIGINT NOT NULL
+);
+
+CREATE TABLE DOSE_1_COVISHIELD (
+    NAME VARCHAR(50) NOT NULL,
+    DATE DATETIME NOT NULL,
+    CONTACT_NUMBER BIGINT NOT NULL,
+    CITY VARCHAR(50) NOT NULL,
+    AADHAAR BIGINT NOT NULL
+);
+
+CREATE TABLE DOSE_2_COVAXIN (
+    AADHAAR BIGINT NOT NULL,
+    CITY VARCHAR(50) NOT NULL,
+    CONTACT_NUMBER BIGINT NOT NULL,
+    DATE DATETIME NOT NULL,
+    NAME VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE DOSE_2_COVISHIELD (
+    CITY VARCHAR(50) NOT NULL,
+    NAME VARCHAR(50) NOT NULL,
+    DATE DATETIME NOT NULL,
+    CONTACT_NUMBER BIGINT NOT NULL,
+    AADHAAR BIGINT NOT NULL
+);
+
+CREATE TABLE REGISTRATION_COVAXIN (
+    AADHAAR BIGINT NOT NULL,
+    CITY VARCHAR(50) NOT NULL,
+    CONTACT_NUMBER BIGINT NOT NULL,
+    DATE DATETIME NOT NULL,
+    DOSE INT NOT NULL,
+    NAME VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE REGISTRATION_COVISHIELD (
+    AADHAAR BIGINT NOT NULL,
+    CITY VARCHAR(50) NOT NULL,
+    CONTACT_NUMBER BIGINT NOT NULL,
+    DATE DATETIME NOT NULL,
+    DOSE INT NOT NULL,
+    NAME VARCHAR(50) NOT NULL
+);
+```
+
+Execute these SQL statements in your MySQL database to create the necessary tables. Ensure that the table names, field names, and data types match the provided schema.
+
+By following these steps, you can safely manage and operate the vaccination center management system with your own database and PIN code.
+
 ## Usage
 
 1. Run the script.
