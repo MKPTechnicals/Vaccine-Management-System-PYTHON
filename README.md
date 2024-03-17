@@ -1,5 +1,8 @@
 # Vaccination Center Management System
 
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-blue.svg)](https://www.mysql.com/)
+
 This Python script facilitates the management of a vaccination center. It allows registration for vaccination, entry of vaccinated individuals, and searching vaccination records by Aadhaar number.
 
 ## Features
@@ -42,4 +45,6 @@ By following these steps, you can safely manage and operate the vaccination cent
    - Search vaccination records (Option 3)
    - Exit (Option 0)
 
+## Authors
 
+- [@mkptechnicals](https://www.github.com/MKPTechnicals)
