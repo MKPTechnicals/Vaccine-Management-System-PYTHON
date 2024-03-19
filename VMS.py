@@ -113,7 +113,7 @@ def search(cursor, aadhar):
             print("City:", row[3])
             print("Contact No.:", row[4])
             print("Dose: 1")
-            print("Vaccine:", row[6])
+            print("Vaccine:", row[5])
             print("--------------------------------------------------")
 
         sql2 = f"SELECT *, 'Covaxin' AS VACCINE FROM DOSE_2_COVAXIN WHERE AADHAAR={aadhar} UNION SELECT *, 'Covishield' AS VACCINE FROM DOSE_2_COVISHIELD WHERE AADHAAR={aadhar}"
@@ -127,7 +127,7 @@ def search(cursor, aadhar):
             print("City:", row[3])
             print("Contact No.:", row[4])
             print("Dose: 2")
-            print("Vaccine:", row[6])
+            print("Vaccine:", row[5])
             print("--------------------------------------------------")
 
         if not found:
